@@ -245,16 +245,17 @@
         });
 
         checkButton.addEventListener('click', () => {
-            const userConversion = parseInt(userInput.value.trim(), 10);
-            if (userConversion === generatedNumber) {
-                verificationResultDiv.textContent = '¡Correcto! La conversión coincide.';
-            } else {
-                verificationResultDiv.textContent = 'Incorrecto. Inténtalo de nuevo.';
-            }
+    const userConversion = userInput.value.trim().toUpperCase();
+    if (userConversion === generatedConversion) {
+        verificationResultDiv.textContent = '¡Correcto! La conversión coincide.';
+    } else {
+        verificationResultDiv.textContent = 'Incorrecto. Inténtalo de nuevo.';
+    }
         });
+
     </script>
      <div class="footer">
-        <p>&copy; 2024 Cultura de México | Creado por Michelle Ortega</p>
+        <p>&copy; 2024 Habilidades Del Pensamiento Lógico | Creado por Michelle Ortega</p>
     </div>
 </div>
 </body>
